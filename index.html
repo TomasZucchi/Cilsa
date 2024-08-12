@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos Personales</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="high-contrast.css" id="contrast-stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Datos Personales</h1>
+        <form id="personalDataForm">
+            <label for="firstName">Nombre:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Apellido:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span id="emailError" class="error-message"></span>
+
+            <label for="dob">Fecha de Nacimiento:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="country">País de Residencia:</label>
+            <select id="country" name="country" required>
+                <option value="argentina">Argentina</option>
+                <option value="brazil">Brasil</option>
+                <option value="chile">Chile</option>
+                <option value="colombia">Colombia</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <button id="toggle-contrast">Modo claro</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
